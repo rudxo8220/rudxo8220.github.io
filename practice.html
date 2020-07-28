@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset= "UTF_8">
         <a href="2.html"><h1>joawiki</h1></a><!-- h6까지 존재 -->
         <a href="1.html"><h2>원피스(만화)</h2></a>
         
         <script language= 'javascript'>
             function changeColorRed(){
+                
                 var getDate = document.getElementById("fontChange");
                 getDate.style.color = 'violet';
                 
@@ -13,22 +15,19 @@
                 var imageOnepiece = document.getElementById("imageOnepiece");
 
                 img.onload = function(){
-                    img.src = "one.png";
                     imageOnepiece.appendChild(img);
-                };
+                    
+                }
+                img = "one.png";
             }
-            
         </script>
     </head>
     <body>
         
-        <div id = "imageOnepiece"></div>
-        <!-- <img src = "one.png"> -->
-        <br><!--한줄 띄기 --><br><br>
+        <div id = 'imageOnepiece'></div>
+        <br><br><br>
         <ul>
-        <!-- 리스트 앞에 점을 줌 -->
         <li>1. 개요</li>
-        <!-- 리스트 -->
         <li>2. 줄거리</li>
         <li>3. 발매 현황</li>
         <li>4. 특징</li>
@@ -41,18 +40,6 @@
             <h4> 개요</h4>
         </ol>
         <input type="button" value = "색깔 바꾸기" onclick="changeColorRed()">
-        <!-- 버튼을 추가하여 색깔을 바꿈 -->
-        
-        
-        <!-- <script>
-            alert("hello world");
-            // alert는 안내문을 나타내는 함수
-        </script>
-        <script src="/js/script1.js"></script> -->
-        <!-- 지금폴더에 있는 js 폴더안에 있는 scirpt1을 사용하겠다. -->
-        <!-- src를 사용하면 그 안에 있는 코드는 무시하므로 안에 사용하면 에러 -->
-            
-
         <h4>1. 개요</h4>
             <p style="margin-top:45px;"><!-- 윗공백 45px을 준다 --><div id = 'fontChange'>1997년 7월 22일</div>부터 <strong><u>주간 소년 점프</u></strong>에 연재를 시작한 만화가 오다 에이이치로의 능력자 배틀 소년만화. 2017년 7월부로 소년점프 역대 연재작 중 두 번째로 현역 20주년을 맞았다.[1]</p>
 
