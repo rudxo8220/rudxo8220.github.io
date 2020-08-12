@@ -1,0 +1,27 @@
+<form id="sform" name="sform" action="http://127.0.0.1:5500/" method="get">
+    <fieldset>
+    <legend class="blind">검색</legend>
+    <input type="hidden" id="sm" name="sm" value="top_hty">
+    <input type="hidden" id="fbm" name="fbm" value="0">
+    <input type="hidden" id="acr" name="acr" value="" disabled="disabled">
+    <input type="hidden" id="acq" name="acq" value="" disabled="disabled">
+    <input type="hidden" id="qdt" name="qdt" value="" disabled="disabled">
+    <input type="hidden" id="ie" name="ie" value="utf8">
+    <input type="hidden" id="acir" name="acir" value="" disabled="disabled">
+    <input type="hidden" id="os" name="os" value="" disabled="disabled">
+    <input type="hidden" id="bid" name="bid" value="" disabled="disabled">
+    <input type="hidden" id="pkid" name="pkid" value="" disabled="disabled">
+    <input type="hidden" id="eid" name="eid" value="" disabled="disabled">
+    <input type="hidden" id="mra" name="mra" value="" disabled="disabled">
+    
+    
+    
+    <div class="green_window" style="">
+    <input id="query" name="query" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off" onclick="document.getElementById('fbm').value=1;" value="">
+    </div>
+    <button id="search_btn" type="submit" title="검색" tabindex="3" class="btn_submit" onclick="window.nclick(this,'sch.action','','',event);" style="">
+    <span class="blind">검색</span>
+    <span class="ico_search_submit"></span>
+    </button>
+    </fieldset>
+    </form>
