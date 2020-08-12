@@ -18,3 +18,5 @@ let password = prompt('비번 입력');
 if (password == value){
 
 }
+let quote_info = document.getElementById("quote");
+alert(quote_info);
